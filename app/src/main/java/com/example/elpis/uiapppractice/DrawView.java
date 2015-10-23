@@ -79,7 +79,7 @@ public class DrawView extends View {
             case MotionEvent.ACTION_UP:
                 drawCanvas.drawPath(drawPath, drawPaint);
                 drawPath.reset();
-                if(clickCount >= 2)
+                if(clickCount >= 3)
                 {
                     long duration =  System.currentTimeMillis() - startTime;
                     if(duration <= 500)
